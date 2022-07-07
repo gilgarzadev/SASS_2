@@ -1,0 +1,31 @@
+$colorPrimario: #206C7F;
+$colorSecundario: #7c7c7c;
+$colorTercero: rgba(57,57,58,0.7);
+
+
+$coloresBotones:(
+    boton1: blue,
+    boton2: pink,
+    boton3: yellow,
+    boton4: #33E746,
+    boton5: #E14ADE,
+    boton6: #A695BD,
+    boton7: #26B9DE
+);
+
+
+
+@each $clave, $var in $coloresBotones {
+    .btn-#{$clave}{
+        background-color: $var;
+    }
+}
+
+$boton:(
+    padding: 10px 5px,
+    border: 0,
+    border-radius: 5px,
+    color: white,
+    background-color: rgb(18, 62, 92),
+);
+

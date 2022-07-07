@@ -1,0 +1,64 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "ribbon.scss";
+@import "separator-ribbon";
+@import "nosotros.scss";
+@import "productos.scss";
+@import "contacto.scss";
+@import "contacto.scss";
+
+
+
+
+.btn1 {
+   padding: map-get($boton , padding );
+   border: map-get($boton , border );
+   border-radius: map-get($boton , border-radius );
+   color: map-get($boton , color );
+   background-color: map-get($boton , background-color );
+}
+
+.botonT1{
+    padding: map-get($boton , padding );
+    border-radius: map-get($boton , border-radius );
+    margin-top: 10px;
+}
+
+.botonT2{
+    @extend .botonT1;
+    background-color: rgb(195, 0, 255);
+}
+
+.botonT3{
+    @extend .botonT1;
+    color: cornflowerblue;
+    size: 15px;
+    box-shadow: 10px 5px 5px black;
+    background-color: burlywood;
+}
+
+.botonT4{
+    @extend .botonT1;
+    color: rgb(150, 19, 19);
+    font-weight: 100;
+    border-radius:75%;
+    box-shadow:3px 2px 5px 1px #ccc;
+    background-color: aqua;
+}
+
+@mixin PropiedadTarjeta ($display,$direccion,$wrap,$justify,$align) {
+    display: $display;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.cardbody1 {
+    @include PropiedadTarjeta(flex, row, nowrap, star, center);
+    max-width: 200px;
+    .p {
+        margin-left: 10px;
+    }
+}

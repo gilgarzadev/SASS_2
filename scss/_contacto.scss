@@ -1,0 +1,29 @@
+.contacto {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contacto h1{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 40%;
+    margin-left: 35px;
+}
+
+.contacto p {
+    width: 640px;
+    height: 78px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+.contacto img {
+    width: 100%;
+    position: relative;
+}
